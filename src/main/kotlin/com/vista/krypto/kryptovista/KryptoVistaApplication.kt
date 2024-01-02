@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class KryptoVistaApplication
 
 fun main(args: Array<String>) {
-	runApplication<KryptoVistaApplication>(*args)
+    runApplication<KryptoVistaApplication>(*args)
 }
