@@ -4,6 +4,9 @@
 # Gradle
 build/
 *.jar
+*.iml
+.gradle/
+/out/
 
 # Compiled bytecode
 *.class
