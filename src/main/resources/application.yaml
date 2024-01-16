@@ -1,3 +1,11 @@
 spring:
   liquibase:
     change-log: classpath:/db/changelog/db.changelog-master.xml
+
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+server:
+  port: 8090
