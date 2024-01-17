@@ -4,18 +4,18 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
-    <changeSet id="changelog-1.0" author="jinyoung lee">
+    <changeSet id="db.changelog-1.0" author="jinyoung lee">
         <createTable tableName="user">
-            <column name="id" type="big int">
+            <column name="id" type="bigint">
                 <constraints primaryKey="true" unique="true"/>
             </column>
             <column name="username" type="varchar(30)">
             </column>
             <column name="socialProvider" type="varchar(20)">
             </column>
-            <column name="createdAt" type="datetime">
+            <column name="createdAt" type="timestamp">
             </column>
-            <column name="updatedAt" type="datetime">
+            <column name="updatedAt" type="timestamp">
                 <constraints nullable="true" />
             </column>
         </createTable>
