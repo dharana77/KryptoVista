@@ -36,10 +36,10 @@ docker exec -it mysql-krypto mysql -uroot -prich!
 ```sql
 -- 아래 명령어로 db 및 user 생성
 CREATE DATABASE krypto DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'user'@'localhost' IDENTIFIED BY 'rich!';
-CREATE USER 'user'@'%' IDENTIFIED BY 'rich!';
+CREATE USER 'localuser'@'localhost' IDENTIFIED BY 'rich!';
+CREATE USER 'localuser'@'%' IDENTIFIED BY 'rich!';
 
-GRANT ALL PRIVILEGES ON krypto.* TO 'user'@'localhost';
-GRANT ALL PRIVILEGES ON krypto.* TO 'user'@'%';
+GRANT ALL PRIVILEGES ON krypto.* TO 'localuser'@'localhost';
+GRANT ALL PRIVILEGES ON krypto.* TO 'localuser'@'%';
 FLUSH PRIVILEGES;
 ```
