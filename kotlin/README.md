@@ -30,7 +30,7 @@
 
 ```shell
 # 아래 명령어로 mysql container 에 접속
-docker exec -it mysql-krypto mysql -uroot -prich!
+docker exec -it mysql-krypto mysql -uroot -proot!
 ```
 
 ```sql
