@@ -7,8 +7,8 @@ import java.math.BigDecimal
 data class OrderBasicResult(
     val price: BigDecimal?,
     val orderType: OrderType
-){
-    constructor(order: Order): this(
+) {
+    constructor(order: Order) : this(
         order.orderPrice,
         order.orderType
     )

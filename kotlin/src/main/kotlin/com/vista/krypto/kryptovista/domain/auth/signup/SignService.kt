@@ -11,7 +11,7 @@ class SignupService(
     fun signupBySocialProvider(
         username: String,
         socialProvider: String
-    ){
+    ) {
         val user = User(username, socialProvider)
         userRepository.save(user)
     }

@@ -6,8 +6,8 @@ import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
 
 @Entity
-class User (
+class User(
     val username: String,
     val socialProvider: String,
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY) val id: Long? = null
-): BaseEntity()
+) : BaseEntity()
