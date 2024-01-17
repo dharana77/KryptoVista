@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="changelog-1.0" author="jinyoung lee">
+        <createTable tableName="user">
+            <column name="id" type="big int">
+                <constraints primaryKey="true" unique="true"/>
+            </column>
+            <column name="username" type="varchar(30)">
+            </column>
+            <column name="socialProvider" type="varchar(20)">
+            </column>
+            <column name="createdAt" type="datetime">
+            </column>
+            <column name="updatedAt" type="datetime">
+                <constraints nullable="true" />
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
