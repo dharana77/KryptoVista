@@ -25,7 +25,7 @@
 ```
 
 ## Database
-- project 에 포함된 `Dockerfile` 을 빌드 및 실행하면 mysql db 가 docker container 로 실행. (sh파일로 묶을 수 있음)
+- project 에 포함된 `mysql-krypto.sh` 실행하면 mysql db 가 docker container 로 실행.
 - 그 후에 아래 명령어를 통해 로컬 db 및 user 를 설정.
 
 ```shell
