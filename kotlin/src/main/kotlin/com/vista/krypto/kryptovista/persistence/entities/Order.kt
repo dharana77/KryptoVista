@@ -3,7 +3,12 @@ package com.vista.krypto.kryptovista.persistence.entities
 import com.vista.krypto.kryptovista.domain.order.OrderPlaceRequest
 import com.vista.krypto.kryptovista.enums.OrderStatus
 import com.vista.krypto.kryptovista.enums.OrderType
-import jakarta.persistence.*
+import jakarta.persistence.Entity
+import jakarta.persistence.EnumType
+import jakarta.persistence.Enumerated
+import jakarta.persistence.GeneratedValue
+import jakarta.persistence.GenerationType
+import jakarta.persistence.Id
 import java.math.BigDecimal
 
 @Entity

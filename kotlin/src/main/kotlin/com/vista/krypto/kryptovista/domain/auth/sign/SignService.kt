@@ -1,11 +1,11 @@
-package com.vista.krypto.kryptovista.domain.auth.signup
+package com.vista.krypto.kryptovista.domain.auth.sign
 
 import com.vista.krypto.kryptovista.persistence.entities.User
 import com.vista.krypto.kryptovista.persistence.repositories.UserRepository
 import org.springframework.stereotype.Service
 
 @Service
-class SignupService(
+class SignService(
     private val userRepository: UserRepository
 ) {
     fun signupBySocialProvider(
