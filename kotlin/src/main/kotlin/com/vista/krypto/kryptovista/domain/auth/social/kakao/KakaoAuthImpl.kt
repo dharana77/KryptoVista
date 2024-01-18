@@ -12,13 +12,13 @@ class KakaoAuthImpl : KakaoAuth {
     val KAKAO_ACCESSTOKEN_URL: String = "https://kapi.kakao.com/v1/user/access_token_info"
     val KAKAO_CLIENT_KEY = "ef3d5f480a67bb881c142311ff5f09e8"
 
-    override fun signup(accessToken: String): Mono<String.Companion> {
+    override fun signup(accessToken: String): Mono<String> {
         return WebClient.builder().baseUrl(BASE_URL).defaultHeader("Authorization", accessToken).build()
-            .post().uri(KAKAO_SIGNUP_URL).retrieve().bodyToMono(String.javaClass)
+            .post().uri(KAKAO_SIGNUP_URL).retrieve().bodyToMono(String::class.java)
     }
 
-    override fun getAccessToken(): Mono<String.Companion> {
+    override fun getAccessToken(): Mono<String> {
         return WebClient.builder().baseUrl(KAKAO_ACCESSTOKEN_URL).build().get()
-            .uri(KAKAO_ACCESSTOKEN_URL).retrieve().bodyToMono(String.javaClass)
+            .uri(KAKAO_ACCESSTOKEN_URL).retrieve().bodyToMono(String::class.java)
     }
 }

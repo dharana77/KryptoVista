@@ -15,7 +15,7 @@ class SignController(
 ) {
 
     @GetMapping
-    fun getAccessToken(): Mono<String.Companion> {
+    fun getAccessToken(): Mono<String> {
         return kakaoAuthImpl.getAccessToken()
     }
 
